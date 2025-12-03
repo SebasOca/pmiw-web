@@ -73,7 +73,7 @@ h2{
     font-weight: bold;
 }
 h3{
-        padding-left: 5%;
+    padding-left: 5%;
 }
 
 .menuInicial{
@@ -167,6 +167,12 @@ article {
 }
 
 .cuadroAG {
-    align-items: center;
+    display:inline-block;
+    width: 646px;
+    height: 486px;
+
 }
 
+.imgContenido{
+    width: 50%;
+}
