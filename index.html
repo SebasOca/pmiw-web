@@ -1,32 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"/>
-    <link rel="stylesheet" href="estilos.css">
-    <title>TPwf3 - Los músicos de Bremen</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aventura hacia Bremen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
 
 <body>
-    <div class="paper container, pantallaInicial">
-        <h1>La aventura de los músicos de Bremen</h1>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <h1>Aventura hacia Bremen</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <nav class="menuInicial">
-            <a href="index.html">
-                <li><img src="img/inicio.png" href="index.html" class="iconosMenuInicial"> Inicio </li>
-            </a>
-            <a href="aventura.html">
-                <li><img src="img/aventura.png" href="aventura.html" class="iconosMenuInicial"> Aventura </li>
-            </a>
-            <a href="ideacion.html">
-                <li><img src="img/ideacion.png" href="ideacion.html" class="iconosMenuInicial"> Ideación </li>
-            </a>
-            <a href="acerca.html">
-                <li><img src="img/acercademi.png" href="acerca.html" class="iconosMenuInicial"> Acerca de</li>
-            </a>
-        </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <button><a href="index.html"> <img src="img/inicio2.png" href="index.html"> Inicio </a></button>
+          <button><a href="#ideacion"><img src="img/ideacion2.png" href="#ideacion"> Ideación</a></button>
+          <button><a href="#aventuraG"><img src="img/aventura2.png" href="#aventuraG"> Aventura</a></button>
+          <button><a href="#acerca"><img src="img/acercademi2.png" href="#acerca"> Acerca de</a></button>
+        </ul>
+
+      </div>
     </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="seccion col-md-8 col-sm-12">
+        <p class="pp2">«Los músicos de Bremen» es un cuento de los hermanos Grimm que narra la historia de cuatro
+          animales: un burro, un perro, un gato y un gallo, apunto de ser desechados por sus amos por su vejez.
+          Decididosa encontrar un nuevo propósito, se embarcan en un viaje hacia la ciudad de Bremen con la esperanza de
+          convertirse en músicos.</p>
+        <p>En su camino, enfrentan varios desafíos y se apoyan mutuamente, demostrando que la cooperación y la amistad
+          pueden superar la adversidad. A lo largo de su aventura, descubren que juntos son más fuertes y encuentran una
+          oportunidad inesperada que les cambia la vida.</p>
+      </div>
+      <div class="seccion col-md-4 col-sm-12">
+        <img src="img/libro.png" alt="Portada" class="imgContenido">
+      </div>
+
+      <div class="seccion" id="acerca">
+        <h3>El cuento</h3>
+        <article>
+          <p>Esta historia fue recopilada por los hermanos Grimm, Jacob y Wilhelm, y publicado por primera vez en 1819. Este relato se publicó por primera vez en la colección “Cuentos para la infancia y el hogar” en 1819, y desde entonces ha sido traducido a múltiples idiomas, adaptado en libros ilustrados, obras de teatro, series animadas, cortometrajes y hasta películas.</p>
+          <p>El mensaje principal es la importancia de la cooperación y la búsqueda de nuevos propósitos en la vida, incluso cuando uno es considerado obsoleto o inútil.</p>
+        </article>
+      </div>
+
+      <div class="seccion col-md-12 col-sm-12" id="ideacion">
+        <h3>Ideación</h3>
+
+        <p>Como caminos alternativos, las decisiones que se elijan pueden llevar al usuario a dos finales más según la
+          serie de sucesos posteriores:</p>
+        <li>Convertirse en músicos en los bares de Bremen</li>
+        <li>No escapar de sus captores y vivir infelizmente</li>
+
+        <p>En el siguiente gráfico, podemos ver el diagrama de flujo final de la historia y sus variables.</p>
+        <img src="img/flujo.png" alt="Flujo de navegación" class="img-fluid">
+
+        <p>En cuanto a la ideación de la página web, me basé en el framework bootstrap. </p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/pruebas1.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">IAs ilustrativas</h5>
+                <p class="card-text">Utilicé ChatGPT y CanvaIA para crear las ilustraciones, ya que no encontré en la
+                  web las apropiadas para la idea. Todavía no me acostumbré a la IA y me costó mucho tratar que
+                  mantuvieran una coherencia visual.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="img/pruebas2.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Estilo</h5>
+                <p class="card-text">Traté de mantener un estilo de dibujo a lápiz, con tonalidades suaves, evocando las
+                  ilustraciones de los cuentos infantiles.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="img/programacion.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Código</h5>
+                <p class="card-text">En cuanto a la programación de la misma, el mayor problema era que no me tomaba la
+                  librería para la inclusión del sonido. Luego de la corrección, entendí que la librería se agregaba
+                  manualmente al index.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="img/menuV1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/menuV2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/menuF.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Menú</h5>
+                <p class="card-text">Respecto al diseño de la página web, la idea inicial era contener un menú tipo
+                  lista a la izquierda del contenido y siempre visible. Finalmente, opté por una barra de navegación con
+                  la posibilidad de colapsarse en pantallas más chicas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="seccion col-md-12 col-sm-12" id="aventuraG">
+        <h3>Aventura gráfica</h3>
+
+        <iframe src="tpfinalparte1/index.html" frameborder="0" class="cuadroAG"></iframe>
+      </div>
+
+      <div class="seccion" id="acerca">
+        <h3>Acerca de</h3>
+        <article>
+          <p>Este trabajo práctico corresponde a la Etapa 3 de la materia de Programación para medios interactivos
+            orientada a las tecnologías web.</p>
+          <p>Hecho por Sebastián Ocampo, estudiante de Lic. en Diseño Multimedial.</p>
+          <p>Repositorios a otros trabajos de la materia: <a href="https://github.com/SebasOca/pmiw"> PMIW</a></p>
+          <p>Basado en el cuento "Los músicos de Bremen", de los hermanos Grimm.</p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
