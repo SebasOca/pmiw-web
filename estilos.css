@@ -149,7 +149,51 @@ a img {
     border-radius: 12px;
 }
 
+.buttonAV {
+    width: auto;
+    height: auto;
+    background-color: rgba(196, 105, 31);
+    border-radius: 12px;
+    opacity: 60%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 12px;
+}
+
+.buttonAVC {
+    width: 240px;
+    height: 60px;
+    background-color: rgba(196, 105, 31);
+    border-radius: 12px;
+    opacity: 60%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 12px;
+}
+
+.modal-dialog{
+    width: 90%;
+    height: 90%;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.modal-content{
+    background-color: rgba(252, 243, 212, 0.521);
+    backdrop-filter: blur(14px);
+    border-radius: 12px;
+    align-items: center;
+}
+
 .cuadroAG {
+    margin-top: 18%;
     width: 654px;
     height: 520px;
     align-items: center;

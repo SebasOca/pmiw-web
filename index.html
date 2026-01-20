@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -11,6 +11,22 @@
 </head>
 
 <body>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Aventura gráfica</h1>
+        </div>
+        <div class="modal-body">
+          <iframe src="tpfinalparte1/index.html" frameborder="0" class="cuadroAG" width="100%" height="100%"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button class="buttonAVC" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <h1>Aventura hacia Bremen</h1>
@@ -34,7 +50,9 @@
 
 
   <div class="container">
+
     <div class="row">
+
       <div class="seccion col-md-8 col-sm-12">
         <p class="pp2">«Los músicos de Bremen» es un cuento de los hermanos Grimm que narra la historia de cuatro
           animales: un burro, un perro, un gato y un gallo, apunto de ser desechados por sus amos por su vejez.
@@ -51,8 +69,12 @@
       <div class="seccion" id="acerca">
         <h3>El cuento</h3>
         <article>
-          <p>Esta historia fue recopilada por los hermanos Grimm, Jacob y Wilhelm, y publicado por primera vez en 1819. Este relato se publicó por primera vez en la colección “Cuentos para la infancia y el hogar” en 1819, y desde entonces ha sido traducido a múltiples idiomas, adaptado en libros ilustrados, obras de teatro, series animadas, cortometrajes y hasta películas.</p>
-          <p>El mensaje principal es la importancia de la cooperación y la búsqueda de nuevos propósitos en la vida, incluso cuando uno es considerado obsoleto o inútil.</p>
+          <p>Esta historia fue recopilada por los hermanos Grimm, Jacob y Wilhelm, y publicado por primera vez en 1819.
+            Este relato se publicó por primera vez en la colección “Cuentos para la infancia y el hogar” en 1819, y
+            desde entonces ha sido traducido a múltiples idiomas, adaptado en libros ilustrados, obras de teatro, series
+            animadas, cortometrajes y hasta películas.</p>
+          <p>El mensaje principal es la importancia de la cooperación y la búsqueda de nuevos propósitos en la vida,
+            incluso cuando uno es considerado obsoleto o inútil.</p>
         </article>
       </div>
 
@@ -67,7 +89,9 @@
         <p>En el siguiente gráfico, podemos ver el diagrama de flujo final de la historia y sus variables.</p>
         <img src="img/flujo.png" alt="Flujo de navegación" class="img-fluid">
 
-        <p>En cuanto a la ideación de la página web, me basé en el framework bootstrap. </p>
+        <p>En cuanto a la ideación de la página web, me basé en el framework bootstrap. Implementé una barra de
+          navegación flotante, que se presenta con un menú hamburguesa en pantallas menores, unas tarjetas y un
+          componente modal para la aventura.</p>
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
@@ -134,7 +158,7 @@
       <div class="seccion col-md-12 col-sm-12" id="aventuraG">
         <h3>Aventura gráfica</h3>
 
-        <iframe src="tpfinalparte1/index.html" frameborder="0" class="cuadroAG"></iframe>
+        <button class="buttonAV" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Visualizar </button>
       </div>
 
       <div class="seccion" id="acerca">
@@ -150,7 +174,7 @@
 
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
