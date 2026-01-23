@@ -16,15 +16,15 @@ let posTexY;
 
 
 function preload() {
-  fuente = loadFont('https://sebasoca.github.io/pmiw-web/tpfinalparte1/data/fingerPaint.ttf');
-  textos = loadStrings('https://sebasoca.github.io/pmiw-web/tpfinalparte1/data/textos.txt');
+  fuente = loadFont('/tpfinalparte1/data/fingerPaint.ttf');
+  textos = loadStrings('/tpfinalparte1/data/textos.txt');
   soundFormats ('mp3');
-  soundtrack = loadSound("https://sebasoca.github.io/pmiw-web/tpfinalparte1/data/soundtrack.mp3");
+  soundtrack = loadSound("/tpfinalparte1/data/soundtrack.mp3");
 
-  cartel1 = loadImage("https://sebasoca.github.io/pmiw-web/tpfinalparte1/data/cartel1.webp");
-  cartel2 = loadImage("https://sebasoca.github.io/pmiw-web/tpfinalparte1/data/cartel2.webp");
+  cartel1 = loadImage("/tpfinalparte1/data/cartel1.webp");
+  cartel2 = loadImage("/tpfinalparte1/data/cartel2.webp");
   for (let i=0; i<=cant; i++) {
-    imagenesFondo[i] = loadImage("https://sebasoca.github.io/pmiw-web/tpfinalparte1/data/fondo" + i + ".webp");
+    imagenesFondo[i] = loadImage("/tpfinalparte1/data/fondo" + i + ".webp");
   }
 }
 
