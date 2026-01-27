@@ -16,15 +16,15 @@ let posTexY;
 
 
 function preload() {
-  fuente = loadFont('/tpfinalparte1/data/fingerPaint.ttf');
-  textos = loadStrings('/tpfinalparte1/data/textos.txt');
+  fuente = loadFont('data/fingerPaint.ttf');
+  textos = loadStrings('data/textos.txt');
   soundFormats ('mp3');
-  soundtrack = loadSound("/tpfinalparte1/data/soundtrack.mp3");
+  soundtrack = loadSound("data/soundtrack.mp3");
 
-  cartel1 = loadImage("/tpfinalparte1/data/cartel1.webp");
-  cartel2 = loadImage("/tpfinalparte1/data/cartel2.webp");
+  cartel1 = loadImage("data/cartel1.webp");
+  cartel2 = loadImage("data/cartel2.webp");
   for (let i=0; i<=cant; i++) {
-    imagenesFondo[i] = loadImage("/tpfinalparte1/data/fondo" + i + ".webp");
+    imagenesFondo[i] = loadImage("data/fondo" + i + ".webp");
   }
 }
 
